@@ -5,7 +5,7 @@ A small PHP library to read, hydrate and write CSV files with a convenient API.
 
 Requirements
 ------------
-- PHP 8.2+
+- PHP 8.3+
 - Composer (for installing dev deps and running scripts)
 
 Installation
