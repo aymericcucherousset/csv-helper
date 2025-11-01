@@ -1,0 +1,26 @@
+{
+    "name": "aymericcucherousset/csv-helper",
+    "description": "Simplify CSV with php",
+    "license": "MIT",
+    "require": {
+        "php": ">8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aymericcucherousset\\CsvHelper\\": "src"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.3",
+        "friendsofphp/php-cs-fixer": "^3.89",
+        "phpstan/phpstan": "^2.1"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-html coverage --coverage-clover coverage/clover.xml --coverage-filter src",
+        "phpstan": "vendor/bin/phpstan analyse",
+        "coverage:serve": "php -S localhost:8000 -t coverage",
+        "lint": "php-cs-fixer fix --dry-run",
+        "lint-fix": "php-cs-fixer fix"
+    }
+}
